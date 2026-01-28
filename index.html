@@ -2,152 +2,136 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Tradexa - Smart Trading</title>
+<title>Tradexa Official - AI Trading</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-body {
-  margin:0;
-  font-family: Arial, sans-serif;
-  background:#0b1120;
-  color:#ffffff;
-}
-header {
-  background:linear-gradient(135deg,#020617,#0f172a);
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial;}
+body{background:#070b1a;color:white;line-height:1.6;}
+header{
+  background:linear-gradient(120deg,#020617,#0f172a);
+  padding:80px 20px;
   text-align:center;
-  padding:70px 20px;
 }
-header h1 {font-size:42px; margin:0;}
-header p {font-size:18px; color:#cbd5f5;}
-button {
+header h1{font-size:50px;color:#38bdf8;}
+header p{font-size:20px;margin-top:10px;color:#cbd5f5;}
+.hero{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  gap:40px;
+  margin-top:40px;
+}
+.hero img{
+  width:320px;
+  filter:drop-shadow(0 0 20px #38bdf8);
+}
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 28px;
   background:#22c55e;
   color:black;
-  border:none;
-  padding:14px 24px;
-  border-radius:6px;
-  font-size:16px;
-  cursor:pointer;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
 }
-section {padding:60px 20px; max-width:1100px; margin:auto;}
-h2 {color:#22c55e;}
-.cards {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;}
-.card {
-  background:#1e293b;
-  padding:20px;
-  border-radius:10px;
+section{padding:80px 20px;max-width:1200px;margin:auto;}
+h2{text-align:center;font-size:36px;color:#38bdf8;margin-bottom:40px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.card{
+  background:#111827;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 0 20px rgba(56,189,248,0.15);
 }
-footer {
+.card h3{color:#22c55e;margin-bottom:10px;}
+footer{
   background:#020617;
-  padding:20px;
+  padding:30px;
   text-align:center;
-  font-size:14px;
   color:#94a3b8;
 }
-a {color:#22c55e; text-decoration:none;}
-.proof video {width:100%; border-radius:10px;}
-input, textarea {
-  width:100%;
-  padding:10px;
-  border-radius:6px;
-  border:none;
-  margin-top:8px;
-}
-.whatsapp {
+.whatsapp{
   position:fixed;
-  bottom:20px;
   right:20px;
+  bottom:20px;
   background:#22c55e;
-  padding:14px 18px;
+  padding:15px;
   border-radius:50%;
-  font-weight:bold;
+  font-size:22px;
 }
 </style>
 </head>
 <body>
 
-<a class="whatsapp" href="https://wa.me/91XXXXXXXXXX">💬</a>
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">💬</a>
 
 <header>
-<h1>TRADEXA</h1>
+<h1>TRADEXA OFFICIAL</h1>
 <p>Where AI Meets Smart Trading</p>
-<button onclick="document.getElementById('contact').scrollIntoView()">Join Now</button>
+<div class="hero">
+  <div>
+    <p>AI Bot + Manual Pro Trading System<br>
+    Designed for Consistency & Smart Risk</p>
+    <a href="#contact" class="btn">Join Now</a>
+  </div>
+  <img src="https://i.ibb.co/6vJHqV3/ai-bot.png" alt="AI Bot">
+</div>
 </header>
 
 <section>
-<h2>About Tradexa</h2>
-<p>Tradexa ek modern trading firm hai jo AI Bot Trading aur Manual Expert Trading dono provide karti hai. Hamara focus hai disciplined risk management, transparency aur long-term growth.</p>
-</section>
-
-<section>
-<h2>Why Choose Tradexa?</h2>
-<ul>
-<li>AI + Manual Trading System</li>
-<li>Multiple Risk-Based Setups</li>
-<li>Daily Performance Monitoring</li>
-<li>Proof with Video System</li>
-<li>Copy Trading Support</li>
-</ul>
+<h2>Why Tradexa?</h2>
+<div class="grid">
+<div class="card"><h3>AI Bot Trading</h3><p>Automated trades with discipline and speed.</p></div>
+<div class="card"><h3>Manual Expert Trading</h3><p>Human analysis with market understanding.</p></div>
+<div class="card"><h3>Risk Management</h3><p>Every setup has defined risk & protection.</p></div>
+<div class="card"><h3>Video Proof System</h3><p>Only real trade proof videos shared.</p></div>
+</div>
 </section>
 
 <section>
 <h2>Our Trading Setups</h2>
-<div class="cards">
-<div class="card">
-<h3>TRADEXA 1 – Low Risk</h3>
-<p>Risk: Up to 3% per day</p>
-<p>Target: 1% – 2% per day</p>
-</div>
-<div class="card">
-<h3>TRADEXA 2 – Medium Risk</h3>
-<p>Risk: Up to 5% per day</p>
-<p>Target: 3% – 5% per day</p>
-</div>
-<div class="card">
-<h3>TRADEXA 3 – Manual Pro</h3>
-<p>Risk: 3% – 6%</p>
-<p>Target: 2% – 4%</p>
-</div>
-<div class="card">
-<h3>TRADEXA 4 – High Growth</h3>
-<p>Risk: Up to 10%</p>
-<p>Target: Up to 10%</p>
-</div>
-<div class="card">
-<h3>TRADEXA 5 – Aggressive</h3>
-<p>Risk: Very High</p>
-<p>Target: High Growth Potential</p>
-</div>
+<div class="grid">
+<div class="card"><h3>Tradexa 1</h3><p>Low Risk Setup<br>Target: 1% – 2% / day</p></div>
+<div class="card"><h3>Tradexa 2</h3><p>Medium Risk Setup<br>Target: 3% – 5% / day</p></div>
+<div class="card"><h3>Tradexa 3</h3><p>Manual Pro Setup<br>Target: 2% – 4% / day</p></div>
+<div class="card"><h3>Tradexa 4</h3><p>High Growth Setup<br>Target: up to 10%</p></div>
+<div class="card"><h3>Tradexa 5</h3><p>Aggressive Setup<br>High Risk – High Potential</p></div>
 </div>
 </section>
 
-<section class="proof">
+<section>
 <h2>Proof & Transparency</h2>
-<p>We provide real trading proofs in video format:</p>
-<div class="cards">
-<video controls src="proof1.mp4"></video>
-<video controls src="proof2.mp4"></video>
-<video controls src="proof3.mp4"></video>
+<div class="grid">
+<div class="card">🎥 Daily Trade Proof Videos</div>
+<div class="card">📈 Live Performance Clips</div>
+<div class="card">💸 Withdrawal Proof</div>
+<div class="card">📊 Strategy Working Proof</div>
 </div>
 </section>
 
 <section id="contact">
-<h2>Join Tradexa</h2>
+<h2>Join Tradexa Today</h2>
+<div class="grid">
+<div class="card">
 <form>
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea placeholder="Your Message"></textarea>
-<button type="submit">Submit</button>
+<input type="text" placeholder="Your Name" style="width:100%;padding:10px;margin:5px 0;">
+<input type="email" placeholder="Your Email" style="width:100%;padding:10px;margin:5px 0;">
+<textarea placeholder="Your Message" style="width:100%;padding:10px;margin:5px 0;"></textarea>
+<button class="btn">Submit</button>
 </form>
-
+</div>
+<div class="card">
 <p>Contact us directly:</p>
-<p>
-<a href="https://wa.me/91XXXXXXXXXX">WhatsApp</a> | 
-<a href="#">Telegram</a>
-</p>
+<p>WhatsApp & Telegram available</p>
+</div>
+</div>
 </section>
 
 <footer>
-<p>⚠️ Risk Disclaimer: Trading involves risk. Profits are not guaranteed. Past performance does not guarantee future results.</p>
-<p>© 2026 Tradexa</p>
+<p>⚠ Trading involves risk. Profits are not guaranteed. Past performance is not indicative of future results.</p>
+<p>© 2026 Tradexa Official</p>
 </footer>
 
 </body>
