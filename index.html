@@ -4,28 +4,31 @@
 <meta charset="UTF-8">
 <title>Tradexa Official</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 body{
   margin:0;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:Arial,Helvetica,sans-serif;
   background:#020617;
   color:#e5e7eb;
+  scroll-behavior:smooth;
 }
 header{
   text-align:center;
-  padding:40px 20px;
+  padding:60px 20px;
   background:linear-gradient(180deg,#020617,#020617,#0f172a);
 }
 header img{
-  width:160px;
-  margin-bottom:10px;
+  width:140px;
+  margin-bottom:15px;
+  animation:glow 2s infinite alternate;
 }
 h1{
   font-size:42px;
   color:#38bdf8;
 }
 section{
-  padding:60px 20px;
+  padding:70px 20px;
   max-width:1200px;
   margin:auto;
 }
@@ -33,29 +36,28 @@ section{
   text-align:center;
   font-size:36px;
   color:#38bdf8;
-  margin-bottom:30px;
+  margin-bottom:40px;
 }
 .box{
   background:#0f172a;
   padding:25px;
   border-radius:15px;
   margin-bottom:25px;
-  box-shadow:0 0 20px rgba(56,189,248,0.15);
+  box-shadow:0 0 25px rgba(56,189,248,0.15);
+  animation:fadeUp 1s ease;
 }
 .flex{
   display:flex;
   flex-wrap:wrap;
-  gap:20px;
+  gap:25px;
   align-items:center;
 }
 .flex img{
   width:100%;
-  max-width:400px;
-  border-radius:12px;
+  max-width:420px;
+  border-radius:15px;
 }
 .setup{
-  margin-top:15px;
-  padding:15px;
   border-left:4px solid #38bdf8;
 }
 .video-grid{
@@ -63,21 +65,32 @@ section{
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:20px;
 }
+video{
+  width:100%;
+  border-radius:12px;
+}
 footer{
   background:#020617;
   padding:40px 20px;
   text-align:center;
 }
-a{
-  color:#38bdf8;
-  text-decoration:none;
+a{color:#38bdf8;text-decoration:none;}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(40px);}
+  to{opacity:1;transform:translateY(0);}
+}
+@keyframes glow{
+  from{filter:drop-shadow(0 0 5px #38bdf8);}
+  to{filter:drop-shadow(0 0 20px #38bdf8);}
 }
 </style>
 </head>
+
 <body>
 
 <header>
-  <img src="logo.png" alt="Tradexa Logo">
+  <img src="https://i.imgur.com/8QfQ7Gv.png" alt="Tradexa Logo">
   <h1>TRADEXA OFFICIAL</h1>
   <p>AI & Manual Forex Trading Solutions</p>
 </header>
@@ -86,7 +99,7 @@ a{
 <div class="box">
 <p>
 Tradexa is a professional forex trading firm that helps people who are struggling with market losses, emotional trading, and lack of discipline.  
-We provide structured trading solutions so clients can avoid stress and emotional mistakes and rely on proven systems instead.
+We provide structured trading solutions so traders can avoid emotional decisions and follow professional systems.
 </p>
 </div>
 </section>
@@ -94,11 +107,11 @@ We provide structured trading solutions so clients can avoid stress and emotiona
 <section>
 <h2 class="section-title">Manual Trading Team</h2>
 <div class="box flex">
-<img src="manual.jpg" alt="Manual Trading Team">
+<img src="https://images.unsplash.com/photo-1605902711622-cfb43c44367f" alt="Trading Office">
 <div>
 <p>
 Our manual trading division consists of licensed and experienced forex traders with more than 15 years of market experience.  
-Our team includes professional traders from Dubai, China, and the United Kingdom who work in a controlled trading office environment with strict risk management.
+Our team includes professional traders from Dubai, China, and the United Kingdom working in a controlled trading office environment with strict risk management.
 </p>
 </div>
 </div>
@@ -107,12 +120,11 @@ Our team includes professional traders from Dubai, China, and the United Kingdom
 <section>
 <h2 class="section-title">AI Trading Systems</h2>
 <div class="box flex">
-<img src="ai.jpg" alt="AI Trading System">
+<img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485" alt="AI Trading">
 <div>
 <p>
 We use advanced AI-based trading systems designed and developed in the UK and China.  
-These systems are limited-access and used by only a small number of professional firms worldwide.  
-Our AI solutions focus on consistency, automation, and disciplined execution.
+These systems are limited-access and used by only a small number of professional firms worldwide.
 </p>
 </div>
 </div>
@@ -121,70 +133,23 @@ Our AI solutions focus on consistency, automation, and disciplined execution.
 <section>
 <h2 class="section-title">Profit Making Systems</h2>
 
-<div class="box setup">
-<b>Tradexa 1 (Very Low Risk)</b><br>
-Risk on capital: Low<br>
-Expected Monthly Return: 3% – 5%
-</div>
+<div class="box setup"><b>Tradexa 1 (Very Low Risk)</b><br>Expected Monthly Return: 3% – 5%</div>
+<div class="box setup"><b>Tradexa 2</b><br>Expected Monthly Return: 4% – 15%</div>
+<div class="box setup"><b>Tradexa 3</b><br>Expected Monthly Return: 14% – 28%</div>
+<div class="box setup"><b>Tradexa 4</b><br>Expected Monthly Return: 25% – 45%</div>
+<div class="box setup"><b>Tradexa 5</b><br>Expected Monthly Return: 40% – 65%</div>
 
-<div class="box setup">
-<b>Tradexa 2</b><br>
-Risk on capital: 5% – 15%<br>
-Expected Monthly Return: 4% – 15%
-</div>
-
-<div class="box setup">
-<b>Tradexa 3</b><br>
-Risk on capital: 15% – 25%<br>
-Expected Monthly Return: 14% – 28%
-</div>
-
-<div class="box setup">
-<b>Tradexa 4</b><br>
-Risk on capital: 30% – 40%<br>
-Expected Monthly Return: 25% – 45%
-</div>
-
-<div class="box setup">
-<b>Tradexa 5</b><br>
-Risk on capital: 50%<br>
-Expected Monthly Return: 40% – 65%
-</div>
-
-<p style="text-align:center;margin-top:20px;">
-Choice is yours. Clients can select safer or higher-risk systems based on their personal risk tolerance.
-</p>
+<p style="text-align:center;">Choice is yours. Clients can choose systems based on their risk tolerance.</p>
 </section>
 
 <section>
 <h2 class="section-title">Live Trading Proofs</h2>
 <div class="video-grid">
-
-<div class="box">
-<b>Tradexa 1 Proof</b>
-<video controls width="100%"><source src="video1.mp4"></video>
-</div>
-
-<div class="box">
-<b>Tradexa 2 Proof</b>
-<video controls width="100%"><source src="video2.mp4"></video>
-</div>
-
-<div class="box">
-<b>Tradexa 3 Proof</b>
-<video controls width="100%"><source src="video3.mp4"></video>
-</div>
-
-<div class="box">
-<b>Tradexa 4 Proof</b>
-<video controls width="100%"><source src="video4.mp4"></video>
-</div>
-
-<div class="box">
-<b>Tradexa 5 Proof</b>
-<video controls width="100%"><source src="video5.mp4"></video>
-</div>
-
+<div class="box"><b>Tradexa 1</b><video controls><source src="video1.mp4"></video></div>
+<div class="box"><b>Tradexa 2</b><video controls><source src="video2.mp4"></video></div>
+<div class="box"><b>Tradexa 3</b><video controls><source src="video3.mp4"></video></div>
+<div class="box"><b>Tradexa 4</b><video controls><source src="video4.mp4"></video></div>
+<div class="box"><b>Tradexa 5</b><video controls><source src="video5.mp4"></video></div>
 </div>
 </section>
 
@@ -192,11 +157,17 @@ Choice is yours. Clients can select safer or higher-risk systems based on their 
 <h2 class="section-title">Profit Multiplication System</h2>
 <div class="box">
 <p>
-This system is applied only after profits are generated from our Profit Making Systems.  
-For example, if a client earns $400 in profit, that profit can be used separately with our high-risk multiplication strategy.  
-This system aims to increase profits aggressively using automation and controlled exposure.  
-It is applied only on earned profits, not on the main capital.
+This system is applied only after profits are generated from the profit-making systems.  
+Example: if $400 profit is earned, it can be used separately for high-risk multiplication strategies.  
+This system focuses on aggressive growth using automation and controlled exposure.
 </p>
+</div>
+
+<h3 class="section-title">Profit Multiplication Proof</h3>
+<div class="box">
+<video controls>
+<source src="multiplication.mp4">
+</video>
 </div>
 </section>
 
@@ -205,21 +176,16 @@ It is applied only on earned profits, not on the main capital.
 <div class="box">
 <p>
 Trading in financial markets involves risk. There are no fixed or guaranteed returns.  
-All returns mentioned are expected returns based on past system behavior and market conditions.  
-Losses are possible and risk levels depend on market volatility.  
-Clients must understand that capital is at risk and results may vary.
+All returns shown are expected returns based on past performance and market conditions.  
+Losses may occur and capital is at risk.
 </p>
 </div>
 </section>
 
 <footer>
-<p>Contact Us</p>
 <p>Email: yourmail@gmail.com</p>
 <p>WhatsApp: +91XXXXXXXXXX</p>
-<p>
-<a href="#">Instagram</a> | 
-<a href="#">Telegram</a>
-</p>
+<p><a href="#">Instagram</a> | <a href="#">Telegram</a></p>
 </footer>
 
 </body>
