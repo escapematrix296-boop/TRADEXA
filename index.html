@@ -11,28 +11,26 @@ body{
   font-family:Arial,Helvetica,sans-serif;
   background:#020617;
   color:#e5e7eb;
-  scroll-behavior:smooth;
 }
 header{
+  background:linear-gradient(rgba(2,6,23,0.8),rgba(2,6,23,0.9)),
+  url("https://images.unsplash.com/photo-1535320903710-d993d3d77d29") center/cover no-repeat;
   text-align:center;
-  padding:60px 20px;
-  background:linear-gradient(180deg,#020617,#020617,#0f172a);
+  padding:80px 20px;
 }
-header img{
-  width:140px;
-  margin-bottom:15px;
-  animation:glow 2s infinite alternate;
-}
-h1{
-  font-size:42px;
+.logo{
+  font-size:48px;
+  font-weight:bold;
   color:#38bdf8;
+  letter-spacing:3px;
+  text-shadow:0 0 20px #38bdf8;
 }
 section{
   padding:70px 20px;
   max-width:1200px;
   margin:auto;
 }
-.section-title{
+.title{
   text-align:center;
   font-size:36px;
   color:#38bdf8;
@@ -43,8 +41,8 @@ section{
   padding:25px;
   border-radius:15px;
   margin-bottom:25px;
-  box-shadow:0 0 25px rgba(56,189,248,0.15);
-  animation:fadeUp 1s ease;
+  box-shadow:0 0 25px rgba(56,189,248,0.2);
+  animation:fade 1s ease;
 }
 .flex{
   display:flex;
@@ -54,11 +52,8 @@ section{
 }
 .flex img{
   width:100%;
-  max-width:420px;
+  max-width:450px;
   border-radius:15px;
-}
-.setup{
-  border-left:4px solid #38bdf8;
 }
 .video-grid{
   display:grid;
@@ -71,18 +66,12 @@ video{
 }
 footer{
   background:#020617;
-  padding:40px 20px;
   text-align:center;
+  padding:40px 20px;
 }
-a{color:#38bdf8;text-decoration:none;}
-
-@keyframes fadeUp{
-  from{opacity:0;transform:translateY(40px);}
+@keyframes fade{
+  from{opacity:0;transform:translateY(30px);}
   to{opacity:1;transform:translateY(0);}
-}
-@keyframes glow{
-  from{filter:drop-shadow(0 0 5px #38bdf8);}
-  to{filter:drop-shadow(0 0 20px #38bdf8);}
 }
 </style>
 </head>
@@ -90,60 +79,55 @@ a{color:#38bdf8;text-decoration:none;}
 <body>
 
 <header>
-  <img src="https://i.imgur.com/8QfQ7Gv.png" alt="Tradexa Logo">
-  <h1>TRADEXA OFFICIAL</h1>
-  <p>AI & Manual Forex Trading Solutions</p>
+<div class="logo">TRADEXA OFFICIAL</div>
+<p>AI & Manual Forex Trading Solutions</p>
 </header>
 
 <section>
 <div class="box">
 <p>
-Tradexa is a professional forex trading firm that helps people who are struggling with market losses, emotional trading, and lack of discipline.  
-We provide structured trading solutions so traders can avoid emotional decisions and follow professional systems.
+Tradexa is a professional forex trading firm that helps people who are struggling with market losses and emotional trading.  
+We provide structured trading systems so clients can avoid stress and follow professional strategies.
 </p>
 </div>
 </section>
 
 <section>
-<h2 class="section-title">Manual Trading Team</h2>
+<h2 class="title">Manual Trading Team</h2>
 <div class="box flex">
-<img src="https://images.unsplash.com/photo-1605902711622-cfb43c44367f" alt="Trading Office">
-<div>
+<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a" alt="Trading Office">
 <p>
-Our manual trading division consists of licensed and experienced forex traders with more than 15 years of market experience.  
-Our team includes professional traders from Dubai, China, and the United Kingdom working in a controlled trading office environment with strict risk management.
+Our manual trading team consists of licensed and experienced traders with more than 15 years of experience.  
+Our traders operate from Dubai, China, and the United Kingdom in professional trading environments with strict risk management.
 </p>
-</div>
 </div>
 </section>
 
 <section>
-<h2 class="section-title">AI Trading Systems</h2>
+<h2 class="title">AI Trading Systems</h2>
 <div class="box flex">
-<img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485" alt="AI Trading">
-<div>
+<img src="https://images.unsplash.com/photo-1559526324-593bc073d938" alt="AI Trading">
 <p>
-We use advanced AI-based trading systems designed and developed in the UK and China.  
-These systems are limited-access and used by only a small number of professional firms worldwide.
+We use advanced AI-based trading systems designed in the UK and China.  
+These systems are limited-access and used only by professional trading firms worldwide.
 </p>
 </div>
-</div>
 </section>
 
 <section>
-<h2 class="section-title">Profit Making Systems</h2>
+<h2 class="title">Profit Making Systems</h2>
 
-<div class="box setup"><b>Tradexa 1 (Very Low Risk)</b><br>Expected Monthly Return: 3% – 5%</div>
-<div class="box setup"><b>Tradexa 2</b><br>Expected Monthly Return: 4% – 15%</div>
-<div class="box setup"><b>Tradexa 3</b><br>Expected Monthly Return: 14% – 28%</div>
-<div class="box setup"><b>Tradexa 4</b><br>Expected Monthly Return: 25% – 45%</div>
-<div class="box setup"><b>Tradexa 5</b><br>Expected Monthly Return: 40% – 65%</div>
+<div class="box"><b>Tradexa 1 (Very Low Risk)</b><br>Expected Monthly Return: 3% – 5%</div>
+<div class="box"><b>Tradexa 2</b><br>Expected Monthly Return: 4% – 15%</div>
+<div class="box"><b>Tradexa 3</b><br>Expected Monthly Return: 14% – 28%</div>
+<div class="box"><b>Tradexa 4</b><br>Expected Monthly Return: 25% – 45%</div>
+<div class="box"><b>Tradexa 5</b><br>Expected Monthly Return: 40% – 65%</div>
 
-<p style="text-align:center;">Choice is yours. Clients can choose systems based on their risk tolerance.</p>
+<p style="text-align:center;">Choice is yours. Clients can select systems based on risk tolerance.</p>
 </section>
 
 <section>
-<h2 class="section-title">Live Trading Proofs</h2>
+<h2 class="title">Video Proofs</h2>
 <div class="video-grid">
 <div class="box"><b>Tradexa 1</b><video controls><source src="video1.mp4"></video></div>
 <div class="box"><b>Tradexa 2</b><video controls><source src="video2.mp4"></video></div>
@@ -154,30 +138,28 @@ These systems are limited-access and used by only a small number of professional
 </section>
 
 <section>
-<h2 class="section-title">Profit Multiplication System</h2>
+<h2 class="title">Profit Multiplication System</h2>
 <div class="box">
 <p>
-This system is applied only after profits are generated from the profit-making systems.  
-Example: if $400 profit is earned, it can be used separately for high-risk multiplication strategies.  
-This system focuses on aggressive growth using automation and controlled exposure.
+This system is applied only after profits are generated from profit-making systems.  
+Example: if $400 profit is earned, it may be used separately for high-risk multiplication strategies.  
+This system focuses on aggressive growth with controlled exposure.
 </p>
 </div>
 
-<h3 class="section-title">Profit Multiplication Proof</h3>
+<h2 class="title">Profit Multiplication Proof</h2>
 <div class="box">
-<video controls>
-<source src="multiplication.mp4">
-</video>
+<video controls><source src="multiplication.mp4"></video>
 </div>
 </section>
 
 <section>
-<h2 class="section-title">Disclaimer</h2>
+<h2 class="title">Disclaimer</h2>
 <div class="box">
 <p>
-Trading in financial markets involves risk. There are no fixed or guaranteed returns.  
-All returns shown are expected returns based on past performance and market conditions.  
-Losses may occur and capital is at risk.
+Trading involves risk. There are no guaranteed returns.  
+All returns shown are expected returns based on historical performance.  
+Capital is at risk and losses may occur.
 </p>
 </div>
 </section>
@@ -185,7 +167,7 @@ Losses may occur and capital is at risk.
 <footer>
 <p>Email: yourmail@gmail.com</p>
 <p>WhatsApp: +91XXXXXXXXXX</p>
-<p><a href="#">Instagram</a> | <a href="#">Telegram</a></p>
+<p>Instagram | Telegram</p>
 </footer>
 
 </body>
