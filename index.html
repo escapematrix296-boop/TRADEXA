@@ -1,176 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Tradexa Official</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-body{
-  margin:0;
-  font-family:Arial,Helvetica,sans-serif;
-  background:#020617;
-  color:#e5e7eb;
-}
-header{
-  background:linear-gradient(rgba(2,6,23,0.8),rgba(2,6,23,0.9)),
-  url("https://images.unsplash.com/photo-1535320903710-d993d3d77d29") center/cover no-repeat;
-  text-align:center;
-  padding:80px 20px;
-}
-.logo{
-  font-size:48px;
-  font-weight:bold;
-  color:#38bdf8;
-  letter-spacing:3px;
-  text-shadow:0 0 20px #38bdf8;
-}
-section{
-  padding:70px 20px;
-  max-width:1200px;
-  margin:auto;
-}
-.title{
-  text-align:center;
-  font-size:36px;
-  color:#38bdf8;
-  margin-bottom:40px;
-}
-.box{
-  background:#0f172a;
-  padding:25px;
-  border-radius:15px;
-  margin-bottom:25px;
-  box-shadow:0 0 25px rgba(56,189,248,0.2);
-  animation:fade 1s ease;
-}
-.flex{
-  display:flex;
-  flex-wrap:wrap;
-  gap:25px;
-  align-items:center;
-}
-.flex img{
-  width:100%;
-  max-width:450px;
-  border-radius:15px;
-}
-.video-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-video{
-  width:100%;
-  border-radius:12px;
-}
-footer{
-  background:#020617;
-  text-align:center;
-  padding:40px 20px;
-}
-@keyframes fade{
-  from{opacity:0;transform:translateY(30px);}
-  to{opacity:1;transform:translateY(0);}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradexa Official | Elite Forex Trading Firm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: white; scroll-behavior: smooth; }
+        .hero-gradient { background: radial-gradient(circle at top right, #1e40af, #000000); }
+        .glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); }
+        .blue-glow:hover { box-shadow: 0 0 20px rgba(37, 99, 235, 0.4); border-color: #2563eb; transition: 0.3s; }
+        h1, h2 { font-family: 'Poppins', sans-serif; text-transform: uppercase; letter-spacing: 2px; }
+        
+        /* Floating WhatsApp Button Style */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            z-index: 100;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #128c7e;
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
-<img src="logo.png" alt="Tradexa Logo" style="width:180px; margin-bottom:15px;">
-<h1>TRADEXA OFFICIAL</h1>
-<p>AI & Manual Forex Trading Solutions</p>
+    <a href="https://wa.me/919999999999?text=Hi%20Tradexa%20Team,%20I%20want%20to%20know%20more%20about%20your%20trading%20systems." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-</header>
+    <nav class="p-6 flex justify-between items-center border-b border-gray-800 sticky top-0 bg-black/80 backdrop-blur-md z-50">
+        <div class="text-2xl font-bold tracking-widest text-blue-500">TRADEXA<span class="text-white">OFFICIAL</span></div>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider items-center">
+            <a href="#manual" class="hover:text-blue-500 transition">Manual Trading</a>
+            <a href="#ai" class="hover:text-blue-500 transition">AI Systems</a>
+            <a href="#setups" class="hover:text-blue-500 transition">Setups</a>
+            <a href="tel:+919999999999" class="text-blue-400 font-bold"><i class="fa fa-phone mr-2"></i>Call Now</a>
+        </div>
+    </nav>
 
-<section>
-<div class="box">
-<p>
-Tradexa is a professional forex trading firm that helps people who are struggling with market losses and emotional trading.  
-We provide structured trading systems so clients can avoid stress and follow professional strategies.
-</p>
-</div>
-</section>
+    <section class="hero-gradient py-32 px-6 text-center">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">Stop Fighting The Market. <br><span class="text-blue-500 text-6xl">Let Experts Trade.</span></h1>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg mb-10 italic">"We help traders recover losses and eliminate emotional trading through institutional-grade strategies."</p>
+        <div class="flex justify-center gap-6">
+            <a href="#setups" class="bg-blue-600 px-8 py-4 rounded font-bold hover:bg-blue-700 transition transform hover:-translate-y-1">View Profit Setups</a>
+            <a href="https://wa.me/919999999999" class="border border-blue-600 px-8 py-4 rounded font-bold hover:bg-blue-600/10 transition">Contact WhatsApp</a>
+        </div>
+    </section>
 
-<section>
-<h2 class="title">Manual Trading Team</h2>
-<div class="box flex">
-<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a" alt="Trading Office">
-<p>
-Our manual trading team consists of licensed and experienced traders with more than 15 years of experience.  
-Our traders operate from Dubai, China, and the United Kingdom in professional trading environments with strict risk management.
-</p>
-</div>
-</section>
+    <section id="manual" class="py-20 px-6 max-w-7xl mx-auto border-b border-gray-900">
+        <h2 class="text-4xl font-bold mb-12 text-center border-l-4 border-blue-600 pl-4">Manual Institutional Trading</h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <p class="text-gray-300 leading-relaxed text-lg mb-6 text-justify">
+                    Our manual trading floor consists of licensed professionals with over <span class="text-blue-400 font-bold text-xl">15+ Years of Experience</span>. We don't just follow charts; we follow liquidity.
+                </p>
+                <p class="text-gray-400 mb-8">Directly operating from major hubs including <span class="text-white font-semibold">Dubai, China, and the UK</span>, our team handles the volatility while you enjoy the results.</p>
+                <div class="grid grid-cols-2 gap-4 text-sm text-blue-300">
+                    <div class="flex items-center"><i class="fa fa-check-circle mr-2"></i> No Emotional Stress</div>
+                    <div class="flex items-center"><i class="fa fa-check-circle mr-2"></i> High Accuracy Trades</div>
+                    <div class="flex items-center"><i class="fa fa-check-circle mr-2"></i> Institutional Flow</div>
+                    <div class="flex items-center"><i class="fa fa-check-circle mr-2"></i> 24/5 Monitoring</div>
+                </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden border border-blue-900 shadow-2xl relative">
+                <div class="absolute inset-0 bg-blue-600/10"></div>
+                <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=800" alt="Trading Office" class="w-full h-96 object-cover hover:scale-105 transition duration-700">
+            </div>
+        </div>
+    </section>
 
-<section>
-<h2 class="title">AI Trading Systems</h2>
-<div class="box flex">
-<img src="https://images.unsplash.com/photo-1559526324-593bc073d938" alt="AI Trading">
-<p>
-We use advanced AI-based trading systems designed in the UK and China.  
-These systems are limited-access and used only by professional trading firms worldwide.
-</p>
-</div>
-</section>
+    <section id="ai" class="py-20 bg-zinc-950 px-6 border-b border-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-right border-r-4 border-blue-600 pr-4">Advanced AI Systems</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800" alt="AI Interface" class="rounded-2xl border border-blue-500/30 shadow-[0_0_30px_rgba(30,64,175,0.2)]">
+                </div>
+                <div class="order-1 md:order-2">
+                    <p class="text-gray-300 text-lg mb-6 leading-relaxed">
+                        Tradexa utilizes the world's finest AI Systems, engineered in high-tech labs of the <span class="text-white font-bold underline decoration-blue-500">UK and China</span>.
+                    </p>
+                    <p class="text-gray-400">
+                        These algorithms process millions of data points to find entries with surgical precision. Limited availability ensures our edge remains unmatched in the global market.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section>
-<h2 class="title">Profit Making Systems</h2>
+    <section id="setups" class="py-20 px-6 max-w-7xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-4">Profit Making Systems</h2>
+        <p class="text-gray-500 mb-12 uppercase tracking-widest text-sm">Targeted Monthly Returns & Risk Management</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            <div class="glass-card p-8 rounded-2xl blue-glow">
+                <h3 class="text-xl font-bold text-blue-400 mb-4">Tradexa 1</h3>
+                <p class="text-[10px] text-gray-500 mb-2 uppercase tracking-tighter">Ultra Low Risk</p>
+                <div class="text-3xl font-bold mb-2">3-5%</div>
+                <p class="text-[10px] text-gray-400 mb-4">Expected Monthly</p>
+                <div class="pt-4 border-t border-gray-800 text-xs text-red-500">Drawdown: ~1%</div>
+            </div>
+            <div class="glass-card p-8 rounded-2xl blue-glow">
+                <h3 class="text-xl font-bold text-blue-400 mb-4">Tradexa 2</h3>
+                <p class="text-[10px] text-gray-500 mb-2 uppercase tracking-tighter">Conservative</p>
+                <div class="text-3xl font-bold mb-2">4-15%</div>
+                <p class="text-[10px] text-gray-400 mb-4">Expected Monthly</p>
+                <div class="pt-4 border-t border-gray-800 text-xs text-red-500">Drawdown: 5-15%</div>
+            </div>
+            <div class="glass-card p-8 rounded-2xl blue-glow border-blue-500/50">
+                <h3 class="text-xl font-bold text-blue-400 mb-4 text-2xl">Tradexa 3</h3>
+                <p class="text-[10px] text-yellow-500 mb-2 uppercase tracking-tighter font-bold">Most Popular</p>
+                <div class="text-3xl font-bold mb-2">14-28%</div>
+                <p class="text-[10px] text-gray-400 mb-4">Expected Monthly</p>
+                <div class="pt-4 border-t border-gray-800 text-xs text-red-500">Drawdown: 15-25%</div>
+            </div>
+            <div class="glass-card p-8 rounded-2xl blue-glow">
+                <h3 class="text-xl font-bold text-blue-400 mb-4">Tradexa 4</h3>
+                <p class="text-[10px] text-gray-500 mb-2 uppercase tracking-tighter">Aggressive</p>
+                <div class="text-3xl font-bold mb-2">25-45%</div>
+                <p class="text-[10px] text-gray-400 mb-4">Expected Monthly</p>
+                <div class="pt-4 border-t border-gray-800 text-xs text-red-500">Drawdown: 30-40%</div>
+            </div>
+            <div class="glass-card p-8 rounded-2xl blue-glow bg-red-900/5">
+                <h3 class="text-xl font-bold text-blue-400 mb-4">Tradexa 5</h3>
+                <p class="text-[10px] text-red-500 mb-2 uppercase tracking-tighter font-bold">High Reward</p>
+                <div class="text-3xl font-bold mb-2">40-65%</div>
+                <p class="text-[10px] text-gray-400 mb-4">Expected Monthly</p>
+                <div class="pt-4 border-t border-gray-800 text-xs text-red-500 font-bold">Drawdown: 50%</div>
+            </div>
+        </div>
+    </section>
 
-<div class="box"><b>Tradexa 1 (Very Low Risk)</b><br>Expected Monthly Return: 3% – 5%</div>
-<div class="box"><b>Tradexa 2</b><br>Expected Monthly Return: 4% – 15%</div>
-<div class="box"><b>Tradexa 3</b><br>Expected Monthly Return: 14% – 28%</div>
-<div class="box"><b>Tradexa 4</b><br>Expected Monthly Return: 25% – 45%</div>
-<div class="box"><b>Tradexa 5</b><br>Expected Monthly Return: 40% – 65%</div>
+    <section class="py-20 bg-zinc-950 px-6">
+        <h2 class="text-4xl font-bold mb-12 text-center">System Performance Proofs</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 max-w-7xl mx-auto">
+            <div class="glass-card aspect-video flex flex-col items-center justify-center group cursor-pointer">
+                <i class="fa fa-play-circle text-4xl mb-2 text-gray-700 group-hover:text-blue-500 transition"></i>
+                <span class="text-xs uppercase tracking-widest text-gray-500">Tradexa 1</span>
+            </div>
+            <div class="glass-card aspect-video flex flex-col items-center justify-center group cursor-pointer">
+                <i class="fa fa-play-circle text-4xl mb-2 text-gray-700 group-hover:text-blue-500 transition"></i>
+                <span class="text-xs uppercase tracking-widest text-gray-500">Tradexa 2</span>
+            </div>
+            <div class="glass-card aspect-video flex flex-col items-center justify-center group cursor-pointer">
+                <i class="fa fa-play-circle text-4xl mb-2 text-gray-700 group-hover:text-blue-500 transition"></i>
+                <span class="text-xs uppercase tracking-widest text-gray-500">Tradexa 3</span>
+            </div>
+            <div class="glass-card aspect-video flex flex-col items-center justify-center group cursor-pointer">
+                <i class="fa fa-play-circle text-4xl mb-2 text-gray-700 group-hover:text-blue-500 transition"></i>
+                <span class="text-xs uppercase tracking-widest text-gray-500">Tradexa 4</span>
+            </div>
+            <div class="glass-card aspect-video flex flex-col items-center justify-center group cursor-pointer">
+                <i class="fa fa-play-circle text-4xl mb-2 text-gray-700 group-hover:text-blue-500 transition"></i>
+                <span class="text-xs uppercase tracking-widest text-gray-500">Tradexa 5</span>
+            </div>
+        </div>
+    </section>
 
-<p style="text-align:center;">Choice is yours. Clients can select systems based on risk tolerance.</p>
-</section>
+    <section class="py-24 px-6 max-w-5xl mx-auto text-center">
+        <div class="p-12 border-2 border-blue-600 rounded-3xl bg-gradient-to-b from-blue-900/20 to-black relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-4 opacity-10">
+                <i class="fa fa-bolt text-9xl text-blue-500"></i>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 italic text-blue-400 uppercase">Profit Multiplication System</h2>
+            <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+                Unlock the power of compounding. This system is active <span class="text-white font-bold">ONLY after reaching target profits</span>. We take your <span class="text-blue-400 font-bold">earned profit</span> and deploy a high-velocity bot aiming for <span class="text-green-500 font-bold">1000% Growth</span>.
+            </p>
+            <div class="inline-block bg-blue-600/20 px-6 py-2 rounded-full border border-blue-500 text-sm text-blue-300">
+                Example: Grow $400 Profit into $4,000 using advanced risk-scaling.
+            </div>
+        </div>
+    </section>
 
-<section>
-<h2 class="title">Video Proofs</h2>
-<div class="video-grid">
-<div class="box"><b>Tradexa 1</b><video controls><source src="video1.mp4"></video></div>
-<div class="box"><b>Tradexa 2</b><video controls><source src="video2.mp4"></video></div>
-<div class="box"><b>Tradexa 3</b><video controls><source src="video3.mp4"></video></div>
-<div class="box"><b>Tradexa 4</b><video controls><source src="video4.mp4"></video></div>
-<div class="box"><b>Tradexa 5</b><video controls><source src="video5.mp4"></video></div>
-</div>
-</section>
+    <footer id="contact" class="py-16 border-t border-gray-800 px-6 bg-black">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-blue-500">TRADEXA FIRM</h4>
+                    <p class="text-xs text-gray-500 leading-relaxed italic">
+                        "Your emotions are the market's fuel. Let us handle the strategy, you handle the growth."
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold mb-6 uppercase tracking-widest">Connect with Us</h4>
+                    <div class="flex space-x-6 text-2xl">
+                        <a href="https://instagram.com/yourhandle" class="text-pink-500 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="https://t.me/yourhandle" class="text-blue-400 hover:text-white transition"><i class="fab fa-telegram"></i></a>
+                        <a href="mailto:support@tradexa.official" class="text-gray-400 hover:text-white transition"><i class="fa fa-envelope"></i></a>
+                        <a href="tel:+919999999999" class="text-green-500 hover:text-white transition"><i class="fa fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <h4 class="text-sm font-bold mb-4 uppercase tracking-widest">Global Support</h4>
+                    <p class="text-gray-400 text-sm">+91 99999 99999</p>
+                    <p class="text-gray-500 text-xs">Dubai | London | China</p>
+                </div>
+            </div>
 
-<section>
-<h2 class="title">Profit Multiplication System</h2>
-<div class="box">
-<p>
-This system is applied only after profits are generated from profit-making systems.  
-Example: if $400 profit is earned, it may be used separately for high-risk multiplication strategies.  
-This system focuses on aggressive growth with controlled exposure.
-</p>
-</div>
-
-<h2 class="title">Profit Multiplication Proof</h2>
-<div class="box">
-<video controls><source src="multiplication.mp4"></video>
-</div>
-</section>
-
-<section>
-<h2 class="title">Disclaimer</h2>
-<div class="box">
-<p>
-Trading involves risk. There are no guaranteed returns.  
-All returns shown are expected returns based on historical performance.  
-Capital is at risk and losses may occur.
-</p>
-</div>
-</section>
-
-<footer>
-<p>Email: yourmail@gmail.com</p>
-<p>WhatsApp: +91XXXXXXXXXX</p>
-<p>Instagram | Telegram</p>
-</footer>
+            <div class="border-t border-gray-900 pt-8">
+                <h4 class="text-xs font-bold mb-4 text-gray-400 uppercase">Risk Disclaimer:</h4>
+                <p class="text-[10px] text-gray-600 leading-relaxed">
+                    Trading Forex involves high risk. All returns mentioned (3-65%) are <span class="text-gray-400 font-bold">EXPECTED RETURNS</span> based on historical data and not a guarantee of future results. Drawdowns are part of professional trading. Tradexa Firm is not responsible for any financial losses. Invest only what you can afford to risk.
+                </p>
+                <p class="text-center mt-8 text-gray-700 text-[10px]">© 2026 Tradexa Official. Designed for Elites.</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
