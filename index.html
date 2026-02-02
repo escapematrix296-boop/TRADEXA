@@ -4,51 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tradexa Official | Kaseem FX 🏛️</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #050505; color: #ffffff; text-align: center; padding: 20px; margin: 0; }
-        .container { max-width: 500px; margin: 40px auto; border: 1px solid #1a1a1a; padding: 30px; border-radius: 20px; background: #0a0a0a; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        h1 { color: #0088cc; font-size: 28px; margin-bottom: 5px; }
-        .founder { color: #888; font-size: 14px; margin-bottom: 25px; letter-spacing: 1px; }
-        .stats { background: linear-gradient(145deg, #111, #0a0a0a); padding: 20px; border-radius: 15px; margin-bottom: 25px; border: 1px solid #222; }
-        .stats h3 { color: #ffcc00; margin: 0 0 10px 0; font-size: 18px; }
-        .stats p { margin: 5px 0; font-size: 16px; }
-        .btn { display: flex; align-items: center; justify-content: center; width: 100%; margin: 12px 0; padding: 16px; border-radius: 12px; text-decoration: none; font-weight: bold; font-size: 16px; transition: 0.3s transform; box-sizing: border-box; }
-        .btn:active { transform: scale(0.98); }
-        .whatsapp { background-color: #25D366; color: white; }
-        .telegram { background-color: #0088cc; color: white; }
-        .insta { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); color: white; }
-        .footer { margin-top: 30px; font-size: 12px; color: #444; text-transform: uppercase; letter-spacing: 2px; }
+        :root { --primary: #0088cc; --dark: #050505; --card-bg: #111; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--dark); color: #fff; margin: 0; line-height: 1.6; }
+        .container { max-width: 1100px; margin: auto; padding: 0 20px; }
+        
+        /* Hero Section */
+        .hero { padding: 100px 0 60px; text-align: center; background: radial-gradient(circle at center, #004466 0%, #050505 100%); }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; color: var(--primary); }
+        .hero p { font-size: 1.2rem; color: #888; margin-bottom: 30px; }
+
+        /* Results Card */
+        .results-box { background: var(--card-bg); border: 1px solid #222; border-radius: 20px; padding: 30px; margin: -50px auto 50px; position: relative; box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .stat-item h2 { color: #25D366; margin: 0; }
+
+        /* Section Styling */
+        .section-title { text-align: center; margin-bottom: 40px; }
+        .section-title h2 { font-size: 2.5rem; color: var(--primary); }
+
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding-bottom: 50px; }
+        .feature-card { background: var(--card-bg); padding: 30px; border-radius: 15px; border: 1px solid #222; transition: 0.3s; }
+        .feature-card:hover { border-color: var(--primary); transform: translateY(-5px); }
+
+        /* Buttons */
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: 0.3s; margin: 10px; }
+        .btn-wa { background: #25D366; color: #fff; }
+        .btn-tg { background: var(--primary); color: #fff; }
+        .btn-ig { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: #fff; }
+        
+        i { margin-right: 10px; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>TRADEXA OFFICIAL 🏛️</h1>
-        <div class="founder">BY KASEEM FX</div>
+    <section class="hero">
+        <div class="container">
+            <h1>TRADEXA OFFICIAL 🏛️</h1>
+            <p>Mastering Institutional Logic & AI Precision Execution</p>
+            <a href="https://t.me/kaseemfx" class="btn btn-tg"><i class="fab fa-telegram"></i> JOIN FREE TELEGRAM</a>
+            <a href="https://wa.me/447990210290?text=Hi%20Kaseem!%20🏛️%20I'm%20interested%20in%20the%20Tradexa%20AI%20Bot.%20Saw%20your%20100%25%20growth%20results.%20Please%20share%20details%20on%20how%20to%20join!%20🚀" class="btn btn-wa"><i class="fab fa-whatsapp"></i> ASK FOR AI BOT</a>
+        </div>
+    </section>
 
-        <div class="stats">
-            <h3>📊 LIVE PERFORMANCE</h3>
-            <p>26 Days Capital Growth: <b>106.8%</b></p>
-            <p>Net Profit: <b>$213,592.14</b></p>
-            <p>Final Balance: <b>$407,696.27</b></p>
+    <div class="container">
+        <div class="results-box">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <p>26-DAY GROWTH</p>
+                    <h2>+106.8%</h2>
+                </div>
+                <div class="stat-item">
+                    <p>NET PROFIT</p>
+                    <h2>$213,592+</h2>
+                </div>
+                <div class="stat-item">
+                    <p>WIN RATE</p>
+                    <h2>94% AI Accuracy</h2>
+                </div>
+            </div>
         </div>
 
-        <a href="https://wa.me/447990210290?text=Hi%20Kaseem!%20🏛️%20I'm%20interested%20in%20the%20Tradexa%20AI%20Bot.%20Saw%20your%20100%25%20growth%20results.%20Please%20share%20details%20on%20how%20to%20join!%20🚀" class="btn whatsapp">
-            GET AI BOT ACCESS 🤖
-        </a>
+        <div class="section-title">
+            <h2>Our Core Systems</h2>
+        </div>
 
-        <a href="https://t.me/kaseemfx" class="btn telegram">
-            JOIN FREE TELEGRAM 📢
-        </a>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Manual Trading Setups 📈</h3>
+                <p>Advanced Institutional Order Blocks, Liquidity Sweeps, and SMC-based daily setups for consistent growth.</p>
+                <a href="https://t.me/kaseemfx" style="color: var(--primary); text-decoration: none; font-weight: bold;">View Free Setups →</a>
+            </div>
 
-        <a href="https://www.instagram.com/kaseemfx?igsh=MXBvNGhhdml0MHZuZw==" class="btn insta">
-            FOLLOW ON INSTAGRAM 📸
-        </a>
+            <div class="feature-card">
+                <h3>AI Bot Execution 🤖</h3>
+                <p>Fully automated AI system designed to track institutional footprints and execute high-probability trades 24/7.</p>
+                <a href="https://wa.me/447990210290?text=I%20want%20AI%20Bot%20Details" style="color: #25D366; text-decoration: none; font-weight: bold;">Get Bot Access →</a>
+            </div>
 
-        <div class="footer">
-            Institutional Logic Only
+            <div class="feature-card">
+                <h3>Institutional Mentorship 🏛️</h3>
+                <p>Learn how to trade like the 1%. Moving away from retail traps and mastering the real market mechanics.</p>
+                <a href="https://www.instagram.com/kaseemfx?igsh=MXBvNGhhdml0MHZuZw==" style="color: #E1306C; text-decoration: none; font-weight: bold;">Follow Journey →</a>
+            </div>
         </div>
     </div>
+
+    <footer style="text-align: center; padding: 40px; color: #444; border-top: 1px solid #111;">
+        <p>© 2026 TRADEXA OFFICIAL | BY KASEEM FX</p>
+        <p style="font-size: 10px;">Trading involves risk. Past performance is not indicative of future results.</p>
+    </footer>
 
 </body>
 </html>
