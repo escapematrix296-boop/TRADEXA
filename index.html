@@ -1,153 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>KaseemFX | Free Trading Bot</title>
-    <meta name="description" content="Join KaseemFX Free Trading Bot. $100 to $200 and $100 to $500 automated forex bot. 100% Free. No selling. Join Telegram now.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>KaseemFX | Free Trading Bot</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="KaseemFX Free Trading Bot - Join our Telegram community. 100% Free access.">
+<meta http-equiv="refresh" content="10;url=https://t.me/kaseemfx">
 
-    <!-- Auto Redirect After 10 Seconds -->
-    <meta http-equiv="refresh" content="10;url=https://t.me/kaseemfx">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+body{
+    background:#0a0f1c;
+    color:#fff;
+    overflow:hidden;
+}
 
-        body {
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #000000);
-            background-size: 400% 400%;
-            animation: gradientBG 12s ease infinite;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+/* ===== Background Canvas ===== */
+#chartCanvas{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:0;
+}
 
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
+/* ===== Main Card ===== */
+.container{
+    position:relative;
+    z-index:2;
+    max-width:700px;
+    margin:auto;
+    margin-top:5vh;
+    padding:50px;
+    background:rgba(15,20,35,0.85);
+    border-radius:20px;
+    backdrop-filter:blur(15px);
+    box-shadow:0 0 60px rgba(0,255,204,0.15);
+    text-align:center;
+}
 
-        .container {
-            padding: 45px;
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(12px);
-            box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
-            width: 100%;
-            max-width: 650px;
-        }
+h1{
+    font-size:34px;
+    font-weight:700;
+    margin-bottom:15px;
+}
 
-        h1 {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
+.highlight{
+    color:#00ffcc;
+    font-weight:600;
+}
 
-        .highlight {
-            color: #00ffcc;
-            font-weight: 600;
-        }
+p{
+    margin:15px 0;
+    color:#ccc;
+    line-height:1.6;
+}
 
-        p {
-            margin: 18px 0;
-            color: #cccccc;
-            line-height: 1.6;
-        }
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 40px;
+    border-radius:50px;
+    background:#00ffcc;
+    color:#000;
+    font-weight:600;
+    text-decoration:none;
+    transition:0.3s;
+}
 
-        .btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 15px 40px;
-            border-radius: 50px;
-            background: #0088cc;
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s;
-        }
+.btn:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 20px #00ffcc;
+}
 
-        .btn:hover {
-            background: #00aaff;
-            transform: scale(1.05);
-        }
+/* Trust Badges */
+.trust-section{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
+}
 
-        .trust-section {
-            margin-top: 30px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 15px;
-        }
+.trust-box{
+    background:rgba(255,255,255,0.05);
+    padding:15px;
+    border-radius:12px;
+    font-size:14px;
+}
 
-        .trust-box {
-            background: rgba(255, 255, 255, 0.07);
-            padding: 15px;
-            border-radius: 12px;
-            font-size: 14px;
-            transition: 0.3s;
-        }
+/* Members Counter */
+.members{
+    margin-top:20px;
+    font-size:18px;
+    font-weight:600;
+    color:#00ffcc;
+}
 
-        .trust-box:hover {
-            background: rgba(0, 255, 204, 0.15);
-            transform: translateY(-5px);
-        }
+.note{
+    margin-top:15px;
+    font-size:14px;
+    color:#aaa;
+}
 
-        .note {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #aaaaaa;
-        }
-
-        .footer {
-            margin-top: 30px;
-            font-size: 13px;
-            color: #888888;
-        }
-
-    </style>
+.footer{
+    margin-top:25px;
+    font-size:13px;
+    color:#777;
+}
+</style>
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>🚀 KaseemFX Free Trading Bot</h1>
+<canvas id="chartCanvas"></canvas>
 
-        <p>
-            We provide <span class="highlight">$100 → $200</span> and 
-            <span class="highlight">$100 → $500</span> automated trading bots.
-        </p>
+<div class="container">
+    <h1>🚀 KaseemFX Free Trading Bot</h1>
 
-        <p>
-            ✅ 100% FREE Access<br>
-            ❌ No Selling<br>
-            🤝 Join Telegram & Message Us
-        </p>
+    <p>
+        Get access to <span class="highlight">$100 → $200</span> and 
+        <span class="highlight">$100 → $500</span> automated trading bot.
+    </p>
 
-        <a href="https://t.me/kaseemfx" target="_blank" class="btn">
-            Join Telegram Now
-        </a>
+    <p>
+        ✅ 100% FREE Access <br>
+        ❌ No Selling <br>
+        🤝 Join Telegram & Message Us
+    </p>
 
-        <!-- Trust Badges Section -->
-        <div class="trust-section">
-            <div class="trust-box">🔒 Secure System</div>
-            <div class="trust-box">✔ Verified Community</div>
-            <div class="trust-box">💯 100% Free Access</div>
-            <div class="trust-box">🚫 No Hidden Charges</div>
-        </div>
-<div class="footer">
-            © 2026 KaseemFX | Professional Automated Trading
-        </div>
+    <div class="members">
+        Telegram Members: <span id="counter">0</span>+
     </div>
+
+    <a href="https://t.me/kaseemfx" target="_blank" class="btn">
+        Join Telegram Now
+    </a>
+
+    <div class="trust-section">
+        <div class="trust-box">🔒 Secure System</div>
+        <div class="trust-box">✔ Verified Community</div>
+        <div class="trust-box">💯 100% Free Access</div>
+        <div class="trust-box">🚫 No Hidden Charges</div>
+    </div>
+
+    <p class="note">Redirecting to Telegram in 10 seconds...</p>
+
+    <div class="footer">
+        © 2026 KaseemFX | XAU/USD Trading Community
+    </div>
+</div>
+
+<script>
+/* ===== Animated Member Counter ===== */
+let count = 0;
+let target = 2021;
+let counter = document.getElementById("counter");
+
+let interval = setInterval(()=>{
+    count += 25;
+    if(count >= target){
+        count = target;
+        clearInterval(interval);
+    }
+    counter.innerText = count;
+},20);
+
+
+/* ===== Simple Candlestick Background Animation ===== */
+const canvas = document.getElementById("chartCanvas");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let candles = [];
+
+function createCandle(x){
+    let open = Math.random()*200+200;
+    let close = open + (Math.random()*40-20);
+    let high = Math.max(open,close)+Math.random()*20;
+    let low = Math.min(open,close)-Math.random()*20;
+    return {x,open,close,high,low};
+}
+
+for(let i=0;i<60;i++){
+    candles.push(createCandle(i*20));
+}
+
+function draw(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    candles.forEach(c=>{
+        let color = c.close>c.open ? "#00ff99" : "#ff3b3b";
+        ctx.strokeStyle=color;
+        ctx.fillStyle=color;
+
+        let scale=1.5;
+        let yOpen=canvas.height-c.open;
+        let yClose=canvas.height-c.close;
+        let yHigh=canvas.height-c.high;
+        let yLow=canvas.height-c.low;
+
+        ctx.beginPath();
+        ctx.moveTo(c.x,yHigh);
+        ctx.lineTo(c.x,yLow);
+        ctx.stroke();
+
+        ctx.fillRect(c.x-5,yOpen,10,yClose-yOpen);
+    });
+
+    candles.shift();
+    candles.push(createCandle(candles[candles.length-1].x+20));
+
+    candles.forEach((c,i)=>c.x=i*20);
+
+    requestAnimationFrame(draw);
+}
+
+draw();
+</script>
 
 </body>
 </html>
-        <p class="note">Redirecting to Telegram in 10 seconds...</p>
